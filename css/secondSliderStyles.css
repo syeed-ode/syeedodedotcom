@@ -1,0 +1,115 @@
+.space * {
+    /*transition: all 0.4s ease;*/
+}
+@media (max-width: 1300px) {
+    .offset-block {
+        display: none;
+    }
+    .space .inner-block,
+    .space .inner-block-products {
+        flex: 0 0 33.333%;
+    }
+}
+@media (max-width: 1120px) {
+    .big-city-block {
+        height: 150px;
+    }
+    .space-collapsed-header .space-collapsed-close-btn,
+    .space-collapsed-header .space-collapsed-close-btn-products,
+    .space-collapsed-header .space-collapsed-close-btn-personas,
+    .space-collapsed-header .space-collapsed-close-btn-context {
+        right: 0;
+    }
+}
+@media (max-width: 680px) {
+    .space .inner-block,
+    .space .inner-block-products{
+        flex: 0 0 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .inner-block .inner-block-hover,
+    .inner-block-products .inner-block-products-hover{
+        display: none;
+    }
+    .space .inner-block a img,
+    .space .inner-block-products a img{
+        /*margin: 0;*/
+        margin: 10px 0;
+        padding: 10px 0;
+        width: 120px;
+    }
+    .space .inner-block h2,
+    .space .inner-block-products h2 {
+        font-weight: 500;
+        text-align: left;
+    }
+    .space .inner-block:hover .inner-block-hover,
+    .space .inner-block-products:hover .inner-block-products-hover {
+        opacity: 0;
+        transition: opacity .2s;
+    }
+    .space-collapsed-header {
+        padding: 0;
+        z-index: -1;
+    }
+    .space-collapsed-header img {
+        display: none;
+    }
+    .space-collapsed-header p {
+        padding: 40px 0;
+        margin: 0;
+        text-align: justify;
+    }
+    .space-collapsed-table {
+        flex-direction: column;
+    }
+    .space-collapsed-header .space-collapsed-close-btn,
+    .space-collapsed-header .space-collapsed-close-btn-products,
+    .space-collapsed-header .space-collapsed-close-btn-personas,
+    .space-collapsed-header .space-collapsed-close-btn-context {
+        display: block;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .space-collapsed-table-item {
+        flex-direction: row;
+    }
+    .space-collapsed-table-item-title {
+        padding: 10px 0;
+        flex-basis: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .space-collapsed-table-item-body {
+        padding: 30px 0;
+        flex-basis: 60%;
+    }
+    .space-collapsed-table-platforms {
+        padding: 30px 20px;
+        flex-basis: 60%;
+    }
+    .collapse-questions {
+        padding: 20px 0;
+    }
+    .big-city-block {
+        display: none;
+    }
+    .city-block {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .space .inner-block a img,
+    .space .inner-block-products a img{
+        width: 100px;
+        max-width: 100px;
+    }
+}
