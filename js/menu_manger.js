@@ -6,9 +6,9 @@ var isMobile = false;
     a(window).on("load", function () {
         var showMenuDIV_ElementId = a(document.getElementById("showMenu"));
         var headerDropDownMenuDIV_ClassId = document.getElementsByClassName("header-dropdown-menu-item");
-        var v = document.getElementsByClassName("item-dropdown-menu");
-        var u = document.getElementsByClassName("header-dropdown-menu-item-icon");
-        var r = document.querySelector(".for-menu-type");
+        var itemDropDownMenuUL_ClassName = document.getElementsByClassName("item-dropdown-menu");
+        var headerDropDownDIV_ControlsPlusButton_ClassName = document.getElementsByClassName("header-dropdown-menu-item-icon");
+        var forMenuTypeDIV_UnderHeaderNavigationDiv_ClassName = document.querySelector(".for-menu-type");
         var m = document.querySelector(".header-logo-menu");
         var l = document.querySelector(".space");
         var s = a(".space-collapsed");
@@ -24,7 +24,7 @@ var isMobile = false;
         Array.prototype.forEach.call(headerDropDownMenuDIV_ClassId, function (headerDropDown_ClassItem) {
             headerDropDown_ClassItem.onclick = processClickedHeaderDropDownMenuItem
         });
-        r.onclick = function (y) {
+        forMenuTypeDIV_UnderHeaderNavigationDiv_ClassName.onclick = function (y) {
             m.style.left = y.currentTarget.getBoundingClientRect().left + "px";
             isLogoMenuHide ? a(".header-logo-menu").fadeIn("fast") : a(".header-logo-menu").fadeOut("fast");
             isLogoMenuHide = !isLogoMenuHide
@@ -33,10 +33,10 @@ var isMobile = false;
             isMenuHide ? showMenuDIV_ElementId.html('<img src="images/java_script_menu_mgr/close-btn.svg">') : showMenuDIV_ElementId.html('<img src="images/java_script_menu_mgr/burger-menu.svg">');
             isMenuHide ? a(".header-dropdown-menu").fadeIn("fast") : a(".header-dropdown-menu").fadeOut("fast");
             if (isMenuHide) {
-                Array.prototype.forEach.call(v, function (y) {
+                Array.prototype.forEach.call(itemDropDownMenuUL_ClassName, function (y) {
                     y.style.display = "none";
                 });
-                Array.prototype.forEach.call(u, function (y) {
+                Array.prototype.forEach.call(headerDropDownDIV_ControlsPlusButton_ClassName, function (y) {
                     y.innerHTML = '<img src="images/java_script_menu_mgr/plus_btn.svg" class="plus-icon">'
                 })
             }
@@ -52,7 +52,7 @@ var isMobile = false;
                     z = C
                 }
             });
-            Array.prototype.forEach.call(u, function (C) {
+            Array.prototype.forEach.call(headerDropDownDIV_ControlsPlusButton_ClassName, function (C) {
                 if (C === z) {
                     C.innerHTML = C.innerHTML === '<img src="images/java_script_menu_mgr/arrow-down.svg" class="arrow-icon">' ? '<img src="images/java_script_menu_mgr/plus_btn.svg" class="plus-icon">' : '<img src="images/java_script_menu_mgr/arrow-down.svg" class="arrow-icon">'
                 } else {
@@ -64,7 +64,7 @@ var isMobile = false;
                     A = C
                 }
             });
-            Array.prototype.forEach.call(v, function (C) {
+            Array.prototype.forEach.call(itemDropDownMenuUL_ClassName, function (C) {
                 if (C === A) {
                     C.style.display = C.style.display === "block" ? "none" : "block"
                 } else {
