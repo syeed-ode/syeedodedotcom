@@ -35,32 +35,87 @@
 
     </script>
     <!-- End Google Analytics -->
+    <!-- Start Google Search Console -->
+    <script type="application/ld+json">
+        {
+              "@context": "http://schema.org/"
+            , "@type": "Product"
+            , "name": "Syeed Ode"
+            , "image":  "http://www.syeedode.com/images/index_main_page/sode_resume.pdf"
+            , "brand": {
+                  "@type": "Thing"
+                , "name": "Software Architect"
+            }
+            , "description": [
+                  "Syeed Ode: I'm a software architect, hard nose grinder, and am loving it all!! That's [my] fire."
+                , "Java 8 Architect", "Spring (Boot, DAL, Tx)"
+                , "Microservices", "IoT: Internet of Things", "Cloud Services"
+            ]
+        }
+    </script>
+    <!-- End Google Search Console -->
 
+    <script src="../third_party/libs/jquery-1.7.1.js"></script>
+    <script type="text/javascript">hsjQuery = window['jQuery']</script>
+    <link href="../third_party/css/public_common.css" rel="stylesheet">
+    <meta property="og:title" content="Syeed Ode Resume">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.syeedode.com">
+    <meta property="og:description" content="Syeed Ode Recruitment">
+    <meta name="twitter:description" content="Syeed Ode Recruitment">
+    <meta name="twitter:title" content="Syeed Ode Resume Recruitment">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="canonical" href="http://www.syeedode.com">
+
+    <link rel="stylesheet" href="../third_party/css/public_common.css">
     <link rel="stylesheet" href="../third_party/css/layout.min.css">
     <link rel="stylesheet" href="../third_party/css/Global_Module_V4.min.css">
     <link rel="stylesheet" href="../third_party/css/style.min.css">
     <link rel="stylesheet" href="../third_party/css/fixes.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/sliderStyles.css">
-    <link rel="stylesheet" type="text/css" href="../css/secondSliderStyles.css">
+    <link rel="stylesheet" href="../css/sliderStyles.css" type="text/css">
+    <link rel="stylesheet" href="../css/secondSliderStyles.css" type="text/css">
 
     <script type="text/javascript" src="../js/menu_manger.js"> </script>
 
 </head>
 <body>
     <div class="header-container-wrapper">
-        <div class="header-navigation">
-            <div class="header-navigation-logo-menu">
-                <a href="http://www.syeedode.com/">
-                    <img src="../images/index_main_page/syeedode-logo.gif" alt="logo" class="header-navigation-logo">
-                </a>
-                <div class="for-menu">
-                    <div class="for-menu-type"></div>
-                </div>
-            </div>
-            <div class="burger-button" id="showMenu">
-                <img src="../images/java_script_menu_mgr/burger-menu.svg">
-            </div>
-        </div> <!-- header-navigation -->
+        <div class="header-container container-fluid">
+            <div class="row-fluid-wrapper row-depth-1 row-number-1 "><!-- row-fluid-wrapper row-depth-1 row-number-1 -->
+                <div class="header-navigation">
+                    <div class="header-navigation-logo-menu">
+                        <a href="http://www.syeedode.com/">
+                            <img src="../images/index_main_page/syeedode-logo.gif" alt="logo" class="header-navigation-logo">
+                        </a>
+                        <div class="for-menu">
+                            <div class="for-menu-type"></div>
+                        </div>
+                    </div>
+                    <div class="burger-button" id="showMenu">
+                        <img src="../images/java_script_menu_mgr/burger-menu.svg">
+                    </div>
+                </div> <!-- header-navigation -->
+                <div class="header-dropdown-menu"> <!-- header-dropdown-menu -->
+                    <ul class="header-dropdown-menu-main">
+                        <li class="header-dropdown-menu-section">
+                            <div class="header-dropdown-menu-item">
+                                <span class="header-dropdown-menu-item-title">External References</span>
+                                <div class="header-dropdown-menu-item-icon">
+                                    <img src="../images/java_script_menu_mgr/plus_btn.svg" class="plus-icon">
+                                </div>
+                            </div>
+                            <ul class="item-dropdown-menu">
+                                <li><a onclick="ga('send', 'event', 'Nav', 'Click', 'apps');" href="http://syeedode.com/">Back To SyeedOde.com</a></li>
+                                <li><a onclick="ga('send', 'event', 'Nav', 'Click', 'geospatial');" href="http://www.syeedode.com/resume">Backend Architect Resume</a></li>
+                                <li><a onclick="ga('send', 'event', 'Nav', 'Click', 'apps');" href="https://www.facebook.com/syeedode">Syeed's Personal Lifestyle</a></li>
+                            </ul>
+                        </li>
+                    </ul> <!-- header-dropdown-menu-main -->
+                </div> <!-- header-dropdown-menu -->
+            </div><!-- row-fluid-wrapper row-depth-1 row-number-1 -->
+        </div>
     </div> <!-- header-container-wrapper -->
 </body>
 </html>

@@ -28,7 +28,7 @@
             a.src=g;
             m.parentNode.insertBefore(a,m)
         })
-        (window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
         ga('create', 'UA-113926749-1', 'syeedode.com');
         ga('send', 'pageview');
@@ -83,36 +83,52 @@
 <body>
 <div class="header-container-wrapper">
     <div class="header-container container-fluid">
-        <div class="header-navigation">
-            <div class="header-navigation-logo-menu">
-                <a href="http://www.syeedode.com/">
-                    <img src="../images/index_main_page/syeedode-logo.gif" alt="logo" class="header-navigation-logo">
-                </a>
-                <div class="for-menu">
-                    <div class="for-menu-type"></div>
-                </div>
-            </div>
-            <div class="burger-button" id="showMenu">
-                <img src="../images/java_script_menu_mgr/burger-menu.svg">
-            </div>
-        </div> <!-- header-navigation -->
-        <div class="header-dropdown-menu"> <!-- header-dropdown-menu -->
-            <ul class="header-dropdown-menu-main">
-                <li class="header-dropdown-menu-section">
-                    <div class="header-dropdown-menu-item">
-                        <span class="header-dropdown-menu-item-title">External References</span>
-                        <div class="header-dropdown-menu-item-icon">
-                            <img src="../images/java_script_menu_mgr/plus_btn.svg" class="plus-icon">
-                        </div>
+        <div class="row-fluid-wrapper row-depth-1 row-number-1 "><!-- row-fluid-wrapper row-depth-1 row-number-1 -->
+            <div class="header-navigation">
+                <div class="header-navigation-logo-menu">
+                    <a href="http://www.syeedode.com/">
+                        <img src="../images/index_main_page/syeedode-logo.gif" alt="logo" class="header-navigation-logo">
+                    </a>
+                    <div class="for-menu">
+                        <div class="for-menu-type"></div>
                     </div>
-                    <ul class="item-dropdown-menu">
-                        <li><a onclick="ga('send', 'event', 'Nav', 'Click', 'apps');" href="http://www.philadelphiaeagles.com/">Congratulations World Champion Eagles</a></li>
-                        <li><a onclick="ga('send', 'event', 'Nav', 'Click', 'geospatial');" href="images/index_main_page/sode_resume.pdf">Backend Architect Resume</a></li>
-                        <li><a onclick="ga('send', 'event', 'Nav', 'Click', 'apps');" href="https://www.facebook.com/syeedode">Syeed's Personal Lifestyle</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div> <!-- header-dropdown-menu -->
+                </div>
+                <div class="burger-button" id="showMenu">
+                    <img src="../images/java_script_menu_mgr/burger-menu.svg">
+                </div>
+            </div> <!-- header-navigation -->
+            <div class="header-dropdown-menu"> <!-- header-dropdown-menu -->
+                <ul class="header-dropdown-menu-main">
+                    <li class="header-dropdown-menu-section">
+                        <div class="header-dropdown-menu-item">
+                            <span class="header-dropdown-menu-item-title">External References</span>
+                            <div class="header-dropdown-menu-item-icon">
+                                <img src="../images/java_script_menu_mgr/plus_btn.svg" class="plus-icon">
+                            </div>
+                        </div>
+                        <ul class="item-dropdown-menu">
+                            <li><a onclick="ga('send', 'event', 'Nav', 'Click', 'apps');" href="http://syeedode.com/">Back To SyeedOde.com</a></li>
+                            <li><a onclick="ga('send', 'event', 'Nav', 'Click', 'geospatial');" href="http://www.syeedode.com/resume">Backend Architect Resume</a></li>
+                            <li><a onclick="ga('send', 'event', 'Nav', 'Click', 'apps');" href="https://www.facebook.com/syeedode">Syeed's Personal Lifestyle</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- header-dropdown-menu-main -->
+            </div> <!-- header-dropdown-menu -->
+        </div><!-- row-fluid-wrapper row-depth-1 row-number-1 -->
+        <div class="row-fluid-wrapper row-depth-1 row-number-2 "> <!-- Third Section -->
+            <div class="row-fluid ">
+                <!--<div class="span12 widget-span widget-type-raw_html " style="border-bottom: 1px solid #999" data-widget-type="raw_html" data-x="0" data-w="12">-->
+                <div class="cell-wrapper layout-widget-wrapper">
+                        <!--<span id="hs_cos_wrapper_module_150964659454732" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html">-->
+                    <div class="about-title-section container" style="text-align: center">
+                        <object data="../sode_resume/index.html" type="text/html" width="1800px" height="2278px"/>
+                    </div>
+                        <!--</span>-->
+                </div><!--end layout-widget-wrapper -->
+                <!--</div>&lt;!&ndash;end widget-span &ndash;&gt;-->
+            </div><!--end row-->
+        </div><!--end row-wrapper --> <!-- Third Section -->
+
     </div> <!-- header-container container-fluid -->
 
 </div> <!-- header-container-wrapper -->

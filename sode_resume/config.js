@@ -1,0 +1,1 @@
+IDRViewer.config = {"pagecount":2,"title":"sode_resume_snapshot","author":"","fileName":"sode_resume.pdf","bounds":[[935,1210],[935,1210]],"bookmarks":[],"thumbnailType":"jpg","pageType":"html","pageLabels":[]};
